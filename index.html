@@ -8,6 +8,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Rye|Sura" rel="stylesheet">
+
 
     <style>
         body {
@@ -16,8 +18,24 @@
 
         #instructions {
             background-color: violet;
-
         }
+
+        h1, h5 {
+            font-family: 'Rye', cursive;
+        }
+
+        p {
+            font-family: 'Sura', serif;
+        }
+
+        #characters {
+            margin-left: 60px;
+        }
+
+        .card-body {
+            background-color: aquamarine;
+        }
+
     
     </style>
 </head>
@@ -32,24 +50,75 @@
         </div>
 
         <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4" id="instructions">
-                    
-                        <p class="text-center">OH NO! Your adventuring party has been cursed to deal random damage on contact!</p>
-                        <p class="text-center">The only way to break the curse is to match the damage number to your own HP!</p>
-                        <p class="text-center">If you take too much damage, you lose!</p>
-                    
-                </div>
-                <div class="col-lg-4"></div>
-        </div>      
-        
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8" id="characters"></div>
-            <div class="col-lg-2"></div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4" id="instructions">
+
+                <p class="text-center">OH NO! Your adventuring party has been cursed to deal random damage on contact!
+                </p>
+                <p class="text-center">The only way to break the curse is to match the damage number to your own HP!</p>
+                <p class="text-center">If you take too much damage, you lose!</p>
+
+            </div>
+            <div class="col-lg-4"></div>
         </div>
 
+        <div class="row">
+
+            <div class="col-lg-12" id="characters">
+                <img src="assets/images/merle.png">
+                <img src="assets/images/magnus.png">
+                <img src="assets/images/taako copy.png">
+                <img src="assets/images/angus.png">
+            </div>
+
         </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                    <div class="card text-center" style="width: 18rem;">
+                            <div class="card-body">
+                              <h5 class="card-title">Your HP</h5>
+                              <h2 class="card-text" id="randomHP"></h2>
+                              
+                            </div>
+                          </div>
+            </div>
+                <div class="col-lg-4">
+                        <div class="card text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">WINS</h5>
+                                  <h2 class="card-text" id="wins"></h2>
+                                  <h5 class="card-title">LOSSES</h5>
+                                  <h2 class="card-text" id="losses"></h2>
+                                  
+                                </div>
+                              </div>
+                </div>
+
+                <div class="col-lg-4">
+                        <div class="card text-center" style="width: 18rem;">
+                                <div class="card-body">
+                                  <h5 class="card-title">Damage</h5>
+                                  <h2 class="card-text" id="damage"></h2>
+                                  
+                                </div>
+                              </div>
+                    
+
+                </div>
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+        <script>
+
+
+
+
+        </script>
+
 
 
 </body>

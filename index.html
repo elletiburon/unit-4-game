@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Rye|Sura" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 
     <style>
@@ -18,25 +19,31 @@
 
         #instructions {
             background-color: violet;
+            padding-top: 10px;
+            border: 5px solid white;
+            border-radius: 5px;
         }
 
-        h1, h5 {
+        h1, h3, h5 {
             font-family: 'Rye', cursive;
+            text-shadow: 3px 2px whitesmoke;
         }
 
-        p {
+        p, h2 {
             font-family: 'Sura', serif;
+            
         }
 
+    
         #characters {
             margin-left: 60px;
         }
 
         .card-body {
             background-color: aquamarine;
+            border: 5px solid white;
+            border-radius: 5px;
         }
-
-    
     </style>
 </head>
 
@@ -65,59 +72,55 @@
         <div class="row">
 
             <div class="col-lg-12" id="characters">
-                <img src="assets/images/merle.png">
-                <img src="assets/images/magnus.png">
-                <img src="assets/images/taako copy.png">
-                <img src="assets/images/angus.png">
+                <img id="merle" class="character-image" src="assets/images/merle.png">
+                <img id="magnus" class="character-image" src="assets/images/magnus.png">
+                <img id="taako" class="character-image" src="assets/images/taako copy.png">
+                <img id="angus" class="character-image" src="assets/images/angus.png">
             </div>
 
         </div>
 
         <div class="row">
             <div class="col-lg-4">
-                    <div class="card text-center" style="width: 18rem;">
-                            <div class="card-body">
-                              <h5 class="card-title">Your HP</h5>
-                              <h2 class="card-text" id="randomHP"></h2>
-                              
-                            </div>
-                          </div>
-            </div>
-                <div class="col-lg-4">
-                        <div class="card text-center" style="width: 18rem;">
-                                <div class="card-body">
-                                  <h5 class="card-title">WINS</h5>
-                                  <h2 class="card-text" id="wins"></h2>
-                                  <h5 class="card-title">LOSSES</h5>
-                                  <h2 class="card-text" id="losses"></h2>
-                                  
-                                </div>
-                              </div>
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Your HP</h5>
+                        <h2 class="card-text" id="randomHP"></h2>
+
+                    </div>
                 </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                        <h3 class="card-title" id="win-lose"></h3>
+                        <h5 class="card-title">WINS</h5>
+                        <h2 class="card-text" id="wins"></h2>
+                        <h5 class="card-title">LOSSES</h5>
+                        <h2 class="card-text" id="losses"></h2>
 
-                <div class="col-lg-4">
-                        <div class="card text-center" style="width: 18rem;">
-                                <div class="card-body">
-                                  <h5 class="card-title">Damage</h5>
-                                  <h2 class="card-text" id="damage"></h2>
-                                  
-                                </div>
-                              </div>
-                    
-
+                    </div>
                 </div>
             </div>
 
+            <div class="col-lg-4">
+                <div class="card text-center" style="width: 18rem;">
+                    <div class="card-body">
+                        <h5 class="card-title">Damage</h5>
+                        <h2 class="card-text" id="damage"></h2>
+
+                    </div>
+                </div>
+
+
+            </div>
         </div>
 
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </div>
 
-        <script>
+    <script src="assets/javascript/game.js"></script>
 
-
-
-
-        </script>
+   
 
 
 

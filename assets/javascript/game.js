@@ -10,6 +10,9 @@ console.log(damageNumber)
 var wins = 0;
 var losses = 0;
 
+
+
+
 //generate random HP number 
 
 
@@ -40,17 +43,20 @@ if (counter === randomNumber) {
   else if (counter >= randomNumber) {
     $("#losses").text(losses++);
     $("#win-lose").text("YOU LOSE.").css("color", "red")   
+    reset()
   }
 
 
 });
 
 //TODO reset function generate new randomNumber, assign new damageNumbers, clear win-lose div, reset counter to 0
-// function reset() {
-//     counter = 0;
-//     $("#win-lose").empty()
-//     $("#randomHP").text(randomNumber);
+function reset() {
+    counter = 0;
+    $("#win-lose").empty();
+    $("#randomHP").text(randomNumber);
      
-// }
+}
+
+//TODO loop audio FOR SURE maybe make each onclick have a boop sound if you have time
 
 

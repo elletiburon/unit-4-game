@@ -85,6 +85,5 @@ function reset() {
 
 }
 
-//TODO loop audio FOR SURE maybe make each onclick have a boop sound if you have time
 
 
